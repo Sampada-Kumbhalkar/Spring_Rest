@@ -87,7 +87,9 @@ public ResponseEntity<String> updateHeadingToByCurentLocation(@PathVariable Stri
  public ResponseEntity<String> removeTravellerById(@PathVariable int id){
      //use service
      String msg=travellerService.deleteTravellerById(id);
+     System.out.println("TravellerOperationsRestController.removeTravellerById()"); // change
      return new ResponseEntity<String>(msg, HttpStatus.OK);
+     
  }
 
 
